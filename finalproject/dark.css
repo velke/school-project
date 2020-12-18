@@ -1,0 +1,92 @@
+* { box-sizing: border-box; margin: 0; }
+body {font-family:Verdana, Arial, sans-serif; }
+nav {  background-color: #343943; }
+nav ul { list-style-type: none; 
+         margin: 0;
+         padding: 0;
+}
+nav li { border-bottom: 1px solid #ffffff;
+}
+nav ul ul { position: absolute; background-color: #343943;
+ padding: 0; text-align: left; display: none;
+}
+nav ul ul li { border: 1px solid #ffffff;
+ display: block;
+ width: 10em;
+ padding-left: 0em;
+ margin-left: 0;
+}
+nav a { text-decoration: none; 
+        display: block;
+		padding: 1em 2em;
+}
+nav li:hover ul { display: block; }
+nav a { text-decoration: none; 
+       display: block;
+}
+nav p { text-decoration: none; 
+        display: block;
+		padding: 1em 2em;
+		color: #FFFFFF
+}
+nav p:hover{  color: #000066;
+background-color: #eaeaea;}
+nav a:link { color: #FFFFFF; }
+nav a:visited { color: #F8F8F8; }
+nav a:hover {  color: #000066;
+               background-color: #eaeaea;
+}
+header { background-color: #343943;
+        color: #fafcfe; 
+		background-image: url(blue.png); 
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		padding: 2em 0 2em 7em;
+        font-size: 120%;
+}
+header h1 { padding-left: 120px;
+          padding-top: 10px;
+		  margin: 0; 	  
+ }
+header span { font-style: italic;
+			  font-weight: bold;
+			  font-size: 95%;
+			  color: #FFFFFF;
+              padding-left: 10em;
+			  margin-top: -0.5em;
+}
+h2 { color: #343943; 
+     font-family: arial, sans-serif;
+}
+main { padding: 1em; }
+aside { padding: 8em; }
+figure { margin: auto; padding: 8px; width: 370px;
+ background-color: #FFF; border: 2px solid #CCC;
+ box-shadow: 5px 5px 5px #828282;
+ 
+}
+figcaption { text-align: center;
+		   font-size: 1em;
+		   font-weight: bold;
+		   font-family:sans-seriff;
+		   color: #343943;
+
+}
+footer { background-color: #343943;
+         font-size:70%;
+         text-align: center;
+         padding: 2em;
+		 clear: both;
+}
+
+header, main, nav, figure, footer { display: block; }
+#content { display: flex; }   
+nav      { flex: none; 
+}
+main     { flex: 6; 
+           min-width: 20em; 
+           background-color: #FFFFFF; }
+aside    { flex: 4; 
+            background-color: #EAEAEA; }
+header { padding-left: 10em;
+}
